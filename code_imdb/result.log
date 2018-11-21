@@ -1,0 +1,91 @@
+Execution Begins:
+Word_vectors:
+Clustering:
+Total epochs: 7482
+________________________
+epoch number: 0 0
+epoch number: 100 107
+epoch number: 200 219
+epoch number: 300 343
+epoch number: 400 467
+epoch number: 500 581
+epoch number: 600 699
+epoch number: 700 825
+epoch number: 800 942
+epoch number: 900 1093
+epoch number: 1000 1208
+epoch number: 1100 1322
+epoch number: 1200 1458
+epoch number: 1300 1567
+epoch number: 1400 1686
+epoch number: 1500 1810
+epoch number: 1600 1922
+epoch number: 1700 2040
+epoch number: 1800 2150
+epoch number: 1900 2257
+epoch number: 2000 2366
+epoch number: 2100 2483
+epoch number: 2200 2587
+epoch number: 2300 2713
+epoch number: 2400 2831
+epoch number: 2500 2952
+epoch number: 2600 3064
+epoch number: 2700 3173
+epoch number: 2800 3289
+epoch number: 2900 3407
+epoch number: 3000 3536
+epoch number: 3100 3648
+epoch number: 3200 3757
+epoch number: 3300 3867
+epoch number: 3400 3975
+epoch number: 3500 4084
+epoch number: 3600 4199
+epoch number: 3700 4311
+epoch number: 3800 4429
+epoch number: 3900 4547
+epoch number: 4000 4660
+epoch number: 4100 4769
+epoch number: 4200 4881
+epoch number: 4300 5001
+epoch number: 4400 5133
+epoch number: 4500 5261
+epoch number: 4600 5374
+epoch number: 4700 5496
+epoch number: 4800 5616
+epoch number: 4900 5743
+epoch number: 5000 5864
+epoch number: 5100 5982
+epoch number: 5200 6093
+epoch number: 5300 6198
+epoch number: 5400 6304
+epoch number: 5500 6417
+epoch number: 5600 6534
+epoch number: 5700 6655
+epoch number: 5800 6764
+epoch number: 5900 6876
+epoch number: 6000 6992
+epoch number: 6100 7109
+epoch number: 6200 7216
+epoch number: 6300 7330
+epoch number: 6400 7446
+epoch number: 6500 7568
+epoch number: 6600 7684
+epoch number: 6700 7797
+epoch number: 6800 7909
+epoch number: 6900 8012
+epoch number: 7000 8120
+epoch number: 7100 8227
+epoch number: 7200 8343
+epoch number: 7300 8456
+epoch number: 7400 8565
+Sense vectors
+Classifiers:
+LR_Word2Vec =  0.82668
+LR_Sense2Vec =  0.64932
+[3]   Killed                  python classification1.py
+[6]+  Killed                  python classification1.py
+
+real	170m51.217s
+user	220m22.552s
+sys	0m12.996s
+
