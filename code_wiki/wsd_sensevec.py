@@ -1,12 +1,9 @@
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.wordnet import WordNetLemmatizer
-from nltk.corpus import wordnet as wn
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import DBSCAN
 from gensim.models import Word2Vec
-import numpy
-import gc
+import numpy, gc
 
 # Preprocessing
 data1 = open('wsd_sentences.txt','r').read()

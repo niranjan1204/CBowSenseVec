@@ -1,14 +1,10 @@
-import os, re, time, gensim, numpy
+import os, re, time, gensim, numpy, gc
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from sklearn.linear_model import LogisticRegression
 from sklearn.cluster import DBSCAN
 from gensim.models import Word2Vec
-from sklearn.preprocessing import Imputer
 from sklearn.feature_extraction.text import TfidfVectorizer
-from guppy import hpy
-from memory_profiler import profile
-import gc
 from sklearn.neighbors import NearestNeighbors
 
 # Preprocessing
@@ -45,7 +41,6 @@ def preprocess_(files, path):
 
 def create_vectors(vector_raw):
 	print 'Word_vectors:'
-        #hp = hpy()
     	wvec1 = Word2Vec(vector_raw,  min_count = 100, size = vec_length)
         tfidf_vec1 = TfidfVectorizer(stop_words = 'english', min_df = 100,  max_features = maxfeatures)
         vector_iter1 = []
@@ -86,7 +81,6 @@ def create_vectors(vector_raw):
 	for z in vocab11:
 		if counter%100 == 0:
 			print 'epoch number:', counter, unique
-                        #print hp.heap()
                 for i in range(len(batch[z])):
                     batch[z][i] /= (numpy.linalg.norm(batch[z][i]) + 1e-5)
                 
@@ -176,10 +170,8 @@ def main():
         data5 = [x[0] for x in data1]
         data = removestops(data5) 
 	del data1, data2, data3, data4, data5
-        print data[0]
-        print data[1]
-        #words_old, words_new = create_vectors(data)
-	#accuracy(words_new, words_old)
+        words_old, words_new = create_vectors(data)
+	accuracy(words_new, words_old)
 
 
 if __name__ == '__main__' :
