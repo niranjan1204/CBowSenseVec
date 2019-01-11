@@ -1,5 +1,3 @@
-# python implementation 
-execute.py
 Implemented a non-parametric model which disambiguates between the multiple senses of a polysemic word
 Extended the continuous bag of words architecture with context sensitive clustering of word embeddings
 Performed alternating optimization of word embedding evaluation and word sense disambiguation
